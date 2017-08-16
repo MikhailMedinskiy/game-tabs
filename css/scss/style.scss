@@ -1,0 +1,190 @@
+/*--------------------------
+ reset
+--------------------------*/
+@import "_reset";
+
+/*--------------------------
+ FONTS
+--------------------------*/
+@import "_fonts";
+
+
+
+/*--------------------------
+ GLOBAl
+--------------------------*/
+
+body{
+	color: #b7bacd;
+	min-width: 320px;
+	background: #fff;
+	line-height: 1.6;
+	font-size: 16px;
+	font-family: "LatoRegular", sans-serif;
+}
+
+
+/*--------------------------
+ CUSTOM CODE GOES HERE
+--------------------------*/
+
+.main-wrapper{
+	background-image: url(../img/main-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	position: relative;
+	&:before{
+		background-color: rgba(41,45,62,0.87);
+		position: absolute;
+		content: "";
+		display: block;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+.content{
+	width: 600px;
+	margin: 0 auto;
+	z-index: 2;
+	position: relative;
+	padding-top: 50px;
+}
+
+.tabs-title{
+	background-color: #2B3040;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+	&__link{
+		color: #b7bacd;
+		text-transform: uppercase;
+		font-size: 16px;
+		text-decoration: none;
+		padding: 30px 10px 30px 10px;
+		display: block;
+		border-bottom: 2px solid transparent;
+	}
+	&__link--active{
+		color: #fff;
+		border-bottom: 2px solid #FFFFFF;
+	}
+}
+.tabs-content-list{
+	background-color: #212534;
+	padding: 30px 25px;
+}
+
+.tabs-content{
+	display: none;
+	&--active{
+		display: block;
+	}
+}
+
+.game{
+	font-size: 0;
+	display: flex;
+	&__left{
+		width: 42%;
+		padding: 20px;
+		text-align: center;
+		font-size: 16px;
+		vertical-align: top;
+	}
+	&__rigth{
+		width: 58%;
+		padding: 20px 20px 60px 20px;
+		font-size: 16px;
+		vertical-align: top;
+		position: relative;
+	}
+	&__img{
+		display: block;
+		padding: 5px 5px 10px 0;
+	}
+	&__rait{
+		color: #4B536B;
+		text-align: center;
+		font-size: 20px;
+		&__active{
+			color: #FFDD3F;
+		}
+	}
+
+	&__title-group{
+		padding: 0 0 20px 0;
+	}
+
+	&__title{
+		font-size: 32px;
+		color: #ffffff;
+	}
+	&__desc{
+		color:#fff;
+		font-size: 14px;
+		line-height: 1;
+	}
+	&__info{
+		font-size: 14px;
+		color: #b7bacd;
+	}
+}
+
+.columns{
+	width: 100%;
+    font-size: 0;
+    padding: 0 20px 0 0;
+    position: absolute;
+    bottom: 0;
+	&__2-2{
+		width: 60%;
+		display: inline-block;
+		font-size: 16px;
+		vertical-align: top;
+	}
+	&__2-1{
+		width: 40%;
+		display: inline-block;
+		font-size: 16px;
+		vertical-align: top;
+	}
+}
+
+.price{
+	color: #fff;
+	line-height: 1;
+	&__discount{
+		font-size: 12px;
+		color: #fedc3f;
+		line-height: 1.2;
+	}
+	&__total{
+		font-size: 32px;
+		color: #ffffff;
+		line-height: 1.2;
+	}
+}
+.btn{
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	padding: 15px 25px;
+	background-color: #13E28D;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	transition: 0.3s;
+	border-radius: 3px;
+	&:hover{
+		border-bottom: 3px solid #fff;
+		color: #fedc3f;
+	}
+}
+.text-right{
+	text-align: right;
+}
